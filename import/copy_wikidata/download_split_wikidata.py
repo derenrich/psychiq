@@ -5,8 +5,8 @@ import pandas as pd
 import tqdm
 import csv
 
-DIR = "gs://wikidata-de/dump/wikidata-2002-02-05/"
-URL = "https://dumps.wikimedia.org/wikidatawiki/entities/latest-truthy.nt.bz2"
+DIR = "gs://wikidata-de/dump/wikidata-2022-11-04/"
+URL = "https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.nt.bz2"
 dump_idx = 0
 BATCH_SIZE = 350000
 

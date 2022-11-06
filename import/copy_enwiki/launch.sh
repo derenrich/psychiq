@@ -6,7 +6,7 @@ gsutil cp requirements.txt gs://wikidata-de/dump/enwiki-reqs/requirements.txt
 
 gcloud compute instances create enwiki-uploader \
   --zone us-west1-a \
-  --boot-disk-size=50GB \
+  --boot-disk-size=200GB \
   --metadata-from-file=startup-script=download_split_enwiki.sh  \
   --scopes=storage-rw \
   --machine-type=n2-standard-2 \

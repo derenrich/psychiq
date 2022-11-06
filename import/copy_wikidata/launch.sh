@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 pip freeze > requirements.txt
 gsutil cp *.py gs://wikidata-de/dump/wikidata-req/

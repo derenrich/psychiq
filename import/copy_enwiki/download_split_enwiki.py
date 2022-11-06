@@ -7,7 +7,7 @@ import pandas as pd
 from build_url_list import get_url_list
 
 
-DIR = "gs://wikidata-de/dump/enwiki-2002-02-05/"
+DIR = "gs://wikidata-de/dump/enwiki-2022-11-04/"
 
 dump_idx = 0
 BATCH_SIZE = 10000
@@ -54,5 +54,5 @@ if __name__ == '__main__':
                 if len(buffer) >= BATCH_SIZE:
                     dump_buff(buffer, local_run)
                     buffer = []
-        dump_buff(buffer)
+        dump_buff(buffer, local_run)
     print("@Startup Done@")
